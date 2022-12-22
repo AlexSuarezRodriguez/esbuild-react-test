@@ -11,8 +11,9 @@ function App() {
   )
 }
 
-function renderComponent1() {
+
+globalThis.renderComponent1 = function() {
   ReactDOM.render(<App />,
-  document.getElementById('root'),
-);
+    document.getElementById('root'),
+  );
 }
